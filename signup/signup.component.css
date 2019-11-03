@@ -1,0 +1,103 @@
+
+h1 {
+    background-color:white;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .bg { 
+    /* The image used */
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  form {
+    width:60%;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+  }
+  
+  form p{
+    margin: 5%;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+  }
+  
+  
+  input[type="text"]
+  {
+      font-size:15px;
+  }
+  
+  
+  input[type="email"]
+  {
+      font-size:15px;
+  }
+  input[type="password"]
+  {
+      font-size:15px;
+  }
+  .btn {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #f1f1f1;
+        border-radius: 0;
+        transition: .2s;
+    }
+    .btn:hover, .btn:focus {
+        border: 1px solid #333;
+        background-color: #fff;
+        color: #000;
+    }
+    .modal-header, h4, .close {
+        background-color: #333;
+        color: #fff !important;
+        text-align: center;
+        font-size: 30px;
+    }
+    .modal-header, .modal-body {
+        padding: 40px 50px;
+    }
+    .nav-tabs li a {
+        color: #777;
+    }
+    .navbar {
+        font-family: Montserrat, sans-serif;
+        margin-bottom: 0;
+        background-color: #2d2d30;
+        border: 0;
+        font-size: 11px !important;
+        letter-spacing: 4px;
+        opacity: 0.9;
+    }
+    .navbar li a, .navbar .navbar-brand { 
+        color: #d5d5d5 !important;
+    }
+    .navbar-nav li a:hover {
+        color: #fff !important;
+    }
+    .navbar-nav li.active a {
+        color: #fff !important;
+        background-color: #29292c !important;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+    #text {
+    position: relative;
+    border: 1px solid blue;
+    width: 300px;
+    height: 100px;
+  }

@@ -1,0 +1,22 @@
+<h1>INVENTORY MANAGEMENT SYSTEM</h1>
+    
+  <form [formGroup]='dataForm' (ngSubmit)="Register(dataForm.value)">
+        <ul class="tab-group">
+            <li class="tab active"><a routerLink="login">Log In</a></li>
+            <li class="tab"><a routerLink="signup">Sign Up</a></li>
+        </ul>
+        
+        <h1>Sign Up</h1>
+        <div class="input-field">
+            <label for="name">Username Name</label>
+            <input formControlName='name' id="name" name="name" type="text" placeholder="Enter Username Name" required/>
+            <label for="pass">Password</label>
+            <input id="pass" name="pass" formControlName='pass' type="password" required/>
+            <label for="role">Role</label>
+            <select formControlName='role' name='role' id='role' aria-placeholder="En">
+                <option value='manager'>Manager</option>
+                <option value='stock'>Stock</option>
+            </select>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </form>
