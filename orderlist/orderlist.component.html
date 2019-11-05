@@ -1,0 +1,17 @@
+<body>
+<form [formGroup]='delForm'>
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" *ngFor="let order of orderlist">
+        <div class="card">
+            <div class="card-header bg-light">
+                {{order.Mname}}
+            </div>
+            <div>
+                <button disabled>Completed</button>
+                <input type="submit" formControlName='id' name='id' id='id' class="form-control" value="Completed" placeholder="Completed" (click)="Complete(order.OID,delForm.value)"/>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+</body>

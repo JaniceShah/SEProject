@@ -1,0 +1,22 @@
+<body>
+<form [formGroup]='orderForm'  (ngSubmit)="tryOrder(orderForm.value)">  
+<div class="form-container">  
+<div class="breadcrumbs">
+    <div class="breadcrumbs-inner">
+        <div class="page-title" style="margin-top: 15px;">
+            <select formControlName='name' name='name' id='name' aria-placeholder="En">
+                <ng-container *ngFor="let item of fetchdata">
+                    <option value='{{item.MID}} - {{item.Name}}'>{{item.Name}}</option>
+                </ng-container>
+            </select>
+        </div>
+    <div class="page-header float-right">
+        <button type="submit" class="btn btn-danger">Order</button>
+    </div>
+    </div>
+</div>
+</div>
+</form>
+<br><br>
+<app-orderlist></app-orderlist>
+</body>

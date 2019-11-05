@@ -1,0 +1,36 @@
+.card-body{
+    text-justify: auto;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.card{
+    border: 1px solid silver;
+    box-shadow: 5px 8px 10px silver;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.container{
+    margin-top: 20px;
+    background-color: #9fa8da;
+}
+
+body{
+    background-image: url('https://images.pexels.com/photos/1048027/pexels-photo-1048027.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+   background-size:cover;
+    background-position:center;
+}
+
+.card .card-top button, .card .card-footer button {
+    background: rgb(184, 25, 25);
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: whitesmoke;
+    font-size: 12px;
+    padding: 0 5px;
+}

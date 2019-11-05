@@ -1,0 +1,76 @@
+
+        <div class="breadcrumbs">
+            <div class="breadcrumbs-inner">
+                <div class="row m-0">
+                    <div class="col-sm-4">
+                        <div class="page-header float-left">
+                            <div class="page-title">
+                                <h1>Available Stock</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="page-header float-right">
+                            <app-upload></app-upload>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="animated fadeIn">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">Data Table</strong>
+                            </div>
+                            <div class="card-body">
+                                <table id="bootstrap-data-table" class="table table-striped table-bordered"  [mfData]="fetchdata" #mf="mfDataTable" [mfRowsOnPage]="3">
+                                    <thead>
+                                            <tr>
+                                                    <th style="width: 30%">
+                                                        <mfDefaultSorter by="FID">ID</mfDefaultSorter>
+                                                        <i class="fas fa-sort"></i>
+                                                    </th>
+                                                    <th style="width: 40%">
+                                                        <mfDefaultSorter by="Fname">Item Name</mfDefaultSorter>
+                                                        <i class="fas fa-sort"></i>
+                                                    </th>
+                                                    <th style="width: 30%">
+                                                        <mfDefaultSorter by="Available">Stock</mfDefaultSorter>
+                                                        <i class="fas fa-sort"></i>
+                                                    </th>
+                                                </tr>
+                                    </thead>
+                                    <tbody>
+                                            <ng-container *ngFor="let item of mf.data">
+                                                <tr>
+                                                    <td>{{item.FID}}</td>
+                                                    <td>{{item.Fname}}</td>
+                                                    <td>{{item.Available}}</td>
+                                                </tr>
+                                            </ng-container>
+                                                        
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="5">
+                                                <mfBootstrapPaginator class="text-right"></mfBootstrapPaginator>
+                                            </td>
+                                        </tr>
+                                        </tfoot>   
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div><!-- .animated -->
+        </div><!-- .content -->
+
+
+        <div class="clearfix"></div>
